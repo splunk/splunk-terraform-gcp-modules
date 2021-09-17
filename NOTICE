@@ -1,0 +1,16 @@
+Terraform modules for provisioning GCP Dataflow to Splunk
+Copyright 2021 Splunk, Inc
+
+This product includes software developed by
+Splunk, Inc (https://www.splunk.com)
+
+The source code imports and uses software developed by
+HashiCorp, Inc (https://www.hashicorp.com),
+released under the MPL v. 2.0 License.
+
+This Source Code Form is subject to the
+terms of the Mozilla Public License, v.
+2.0. If a copy of the MPL was not
+distributed with this file, You can
+obtain one at
+http://mozilla.org/MPL/2.0/.
