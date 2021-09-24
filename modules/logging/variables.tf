@@ -1,4 +1,4 @@
-variable "follower_projects" {
+variable "data_projects" {
     description = "non-centralzied gcp projects"
     type = list(string)
 }
