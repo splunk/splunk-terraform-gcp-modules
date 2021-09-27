@@ -1,5 +1,5 @@
 variable "project" {
-    description = "centrliazed gcp project"
+    description = "centralized gcp project"
     type = string
 }
 
@@ -9,7 +9,7 @@ variable "pubsub_topic" {
 }
 
 
-variable "unique_writer_identity_followers" {
+variable "unique_writer_identity_members" {
   description = "unique writer identity of non-central logging sink"
   type = list(string)
 }

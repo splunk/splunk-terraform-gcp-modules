@@ -1,5 +1,5 @@
-resource "google_logging_project_sink" "scdm_logging_sink_followers" {
-    for_each = toset(var.follower_projects)
+resource "google_logging_project_sink" "scdm_data_logging_sinks" {
+    for_each = toset(var.data_projects)
     project = each.key
     name = "${var.scdm_job_uuid}_logging_sink_to_${var.central_project}"
     destination = "pubsub.googleapis.com/${var.pubsub_topic}"
