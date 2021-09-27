@@ -3,7 +3,7 @@ variable "region" {
     type = string
 }
 variable "project" {
-    description = "Centralized project to set up dataflow job"
+    description = " Centralized project to set up dataflow job"
     type = string
 }
 
