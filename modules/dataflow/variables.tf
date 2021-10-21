@@ -7,8 +7,8 @@ variable "project" {
     type = string
 }
 
-variable "scdm_job_uuid" {
-    description = "SCDM job uuid"
+variable "dataflow_job_name" {
+    description = "Dataflow job name"
     type = string
 }
 

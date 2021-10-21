@@ -3,7 +3,7 @@ variable "project" {
     type = string
 }
 
-variable "scdm_job_uuid" {
-    description = "SCDM job uuid"
+variable "storage_bucket_name" {
+    description = "Storage bucket name"
     type = string
 }
