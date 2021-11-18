@@ -1,5 +1,5 @@
 variable "data_projects" {
-    description = "non-centralzied gcp projects"
+    description = "Non-centralized gcp projects"
     type = list(string)
 }
 
@@ -8,12 +8,12 @@ variable "logging_name" {
     type = string
 }
 
-variable "log_type" {
-    default = "gcp log types"
+variable "pubsub_topic" {
+    description = "Pubsub topic for logging"
     type = string
 }
 
-
-variable "pubsub_topic" {
-    description = "pubsub topic for logging"
+variable "filter" {
+    description = "Inclusion filter for the logging router"
+    type = string
 }
