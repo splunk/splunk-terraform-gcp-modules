@@ -54,3 +54,8 @@ variable "parallelism" {
     type = string
     default = "5" # TODO: find a proper default value
 }
+
+variable "pubsub_to_splunk_template_version" {
+    description = "Cloud pubsub to Splunk template version"
+    type = string
+}
