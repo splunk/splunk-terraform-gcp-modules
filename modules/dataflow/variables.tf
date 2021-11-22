@@ -51,3 +51,8 @@ variable "parallelism" {
     description = "Parallelism"
     type = string
 }
+
+variable "pubsub_to_splunk_template_version" {
+    description = "Cloud pubsub to Splunk template version"
+    type = string
+}
