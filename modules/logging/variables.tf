@@ -14,6 +14,6 @@ variable "pubsub_topic" {
 }
 
 variable "filter" {
-    description = "Inclusion filter for the logging router"
+    description = "Filter for the logging router"
     type = string
 }
