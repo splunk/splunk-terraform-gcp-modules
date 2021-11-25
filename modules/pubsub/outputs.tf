@@ -3,7 +3,7 @@ output "topic_name" {
 }
 
 output "subscription_name" {
-    value = var.subscription_name != "" ? google_pubsub_subscription.pubsub_subscription[0].path : null
+    value = google_pubsub_subscription.pubsub_subscription.path
 }
 
 #Added for the unit testing of the module
