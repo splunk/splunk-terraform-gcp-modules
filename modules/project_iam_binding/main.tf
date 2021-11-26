@@ -1,4 +1,4 @@
-resource "google_project_iam_custom_role" "scdm_create_custom_role" {
+resource "google_project_iam_custom_role" "scdm_readonly_role" {
   for_each    = toset(var.projects)
   project     = each.key
   role_id     = var.role_id
@@ -8,11 +8,11 @@ resource "google_project_iam_custom_role" "scdm_create_custom_role" {
 }
 
 locals {
-  role_ids = {for k, v in google_project_iam_custom_role.scdm_create_custom_role : "${k}" => v.id }
+  role_ids = {for k, v in google_project_iam_custom_role.scdm_readonly_role : "${k}" => v.id }
 }
 
 
-resource "google_project_iam_binding" "scdm_service_account_binding_with_custom_role" {
+resource "google_project_iam_binding" "scdm_service_account_binding_with_readonly_role" {
   for_each = toset(var.projects)
   project  = each.key
   role     = lookup(local.role_ids, "${each.key}")
