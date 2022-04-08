@@ -14,5 +14,6 @@ resource "google_dataflow_job" "scdm_dataflow_job" {
         outputDeadletterTopic = "${var.output_dead_letter_topic}"
         batchCount = var.batch_count
         parallelism = var.parallelism
+        includePubsubMessage = true
     }
 }
