@@ -9,7 +9,7 @@ variable "pubsub_topic" {
 }
 
 
-variable "unique_writer_identity_members" {
-  description = "Unique writer identity of the logging sink"
+variable "writer_identity_members" {
+  description = "Writer identity of the logging sink"
   type = list(string)
 }
