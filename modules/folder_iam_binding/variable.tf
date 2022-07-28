@@ -32,3 +32,8 @@ variable "service_account_email" {
   description = "Service account email for the IAM binding"
   type        = string
 }
+
+variable "create_module" {
+  description = "If set to true, it will create folder iam bindings"
+  type        = bool
+}

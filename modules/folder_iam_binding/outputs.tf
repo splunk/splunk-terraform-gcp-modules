@@ -1,10 +1,10 @@
 #Added for unit testing of the module
 output "custom_role_id" {
-value = google_organization_iam_custom_role.scdm_readonly_role.role_id
+value = google_organization_iam_custom_role.scdm_readonly_role[*].role_id
 }
 
 output "custom_role_title" {
-value = google_organization_iam_custom_role.scdm_readonly_role.title
+value = google_organization_iam_custom_role.scdm_readonly_role[*].title
 }
 
 output "IAM_binding_service_account" {
